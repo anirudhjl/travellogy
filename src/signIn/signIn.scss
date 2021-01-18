@@ -1,0 +1,14 @@
+.card {
+  margin: 1%;
+  width: 30%;
+  backface-visibility: hidden;
+  .card-text,
+  .card-title {
+    text-align: center;
+  }
+  .btn-dark {
+    margin: -50px;
+    position: relative;
+    left: 55%;
+  }
+}
