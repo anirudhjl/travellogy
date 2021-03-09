@@ -1,39 +1,29 @@
-import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Header from "./header/header";
-import MainPage from "./mainPage/mainPage";
-import SignIn from "./signIn/signIn";
-import Contact from "./contact/contact";
-import AboutUs from "./aboutUs/aboutUs";
-import Hotels from "./hotels/hotels";
-import Cruises from "./cruises/cruises";
-import Flights from "./flights/flights";
-import Profile from "./profile/profile";
-import Confirm from "./confirm/confirm";
-import SignUp from "./signUp/signUp";
+import * as React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Home from "./components/home";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Projects from "./components/projects";
+import Skills from "./components/skills";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Header />
-      <div className="container">
+    <div style={{ backgroundColor: "black", height: "100vh" }}>
+      <BrowserRouter>
+        <Header />
         <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route exact path="/home" component={MainPage} />
-          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/aboutus" component={AboutUs} />
-          <Route exact path="/signin/hotels" component={Hotels} />
-          <Route exact path="/signin/flights" component={Flights} />
-          <Route exact path="/signin/cruises" component={Cruises} />
-          <Route exact path="/profilepic" component={Profile} />
-          <Route exact path="/userinfo" component={Profile} />
-          <Route exact path="/confirm" component={Confirm} />
-          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/skills" component={Skills} />
         </Switch>
-      </div>
-    </Router>
+      </BrowserRouter>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
