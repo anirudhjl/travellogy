@@ -42,7 +42,7 @@ const MainPage = () => {
         className="btn btn-primary btn-lg"
         type="button"
         onClick={() => {
-          this.props.history.push("/signup");
+          history.push("/signup");
         }}
       >
         Sign Up
