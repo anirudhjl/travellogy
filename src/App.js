@@ -11,6 +11,7 @@ import Flights from "./Components/flights";
 import Profile from "./Components/profile";
 import Confirm from "./Components/confirm";
 import SignUp from "./Components/signUp";
+import Footer from "./Components/footer";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route exact path="/signup" component={SignUp} />
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 };
