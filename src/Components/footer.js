@@ -3,8 +3,7 @@ import "../Styles/footer.css";
 
 const Footer = () => {
   return (
-    <div>
-      <hr />
+    <div id="footer">
       <p>&copy;Copyright 2021. All rights reserved</p>
     </div>
   );
