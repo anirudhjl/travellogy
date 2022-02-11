@@ -1,4 +1,3 @@
-import React from "react";
 import "../Styles/flights.css";
 
 const Flights = () => {

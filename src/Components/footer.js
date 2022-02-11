@@ -1,10 +1,10 @@
-import React from "react";
 import "../Styles/footer.css";
 
 const Footer = () => {
+  let year = new Date().getFullYear();
   return (
     <div id="footer">
-      <p>&copy;Copyright 2021. All rights reserved</p>
+      <p>&copy;Copyright {year}. All rights reserved</p>
     </div>
   );
 };
