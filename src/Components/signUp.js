@@ -18,8 +18,8 @@ class SignUp extends React.Component {
     });
   };
   confirmMail = (event) => {
-    var password = document.getElementById("newpassword").value;
-    var confirmpassword = document.getElementById("confirmpassword").value;
+    let password = document.getElementById("newpassword").value;
+    let confirmpassword = document.getElementById("confirmpassword").value;
     if (password === confirmpassword) {
       event.preventDefault();
       this.props.history.push("/confirm");
