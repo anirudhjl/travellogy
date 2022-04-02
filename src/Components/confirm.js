@@ -26,7 +26,7 @@ const Confirm = () => {
       <button
         type="reset"
         className="btn btn-primary"
-        onClick={() => window.location.reload()}
+        onClick={() => location.reload()}
       >
         Resend
       </button>
